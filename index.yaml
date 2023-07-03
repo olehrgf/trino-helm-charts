@@ -9,6 +9,46 @@ entries:
           description: Pod labels
         - kind: added
           description: Fix container env. Added container envFrom
+        - kind: Fixed
+          description: fix password authentication secret generation when multiple auth types configured
+    apiVersion: v1
+    appVersion: "419"
+    created: "2023-07-03T14:57:02.406553358Z"
+    description: High performance, distributed SQL query engine for big data
+    digest: 54953c87ca2aff42bde2258c3dcdf0d0b5e4de3d907713ac255ac77a40ccc8b1
+    home: https://trino.io
+    icon: https://trino.io/assets/images/trino-logo/trino-ko_tiny-alt.svg
+    keywords:
+    - trino
+    - trinosql
+    - trinodb
+    - presto
+    - prestosql
+    - prestodb
+    - big data
+    - database
+    - sql
+    - query engine
+    - high performance
+    kubeVersion: '>= 1.24.0-0 < 1.28.0-0'
+    maintainers:
+    - name: valeriano-manassero
+      url: https://github.com/valeriano-manassero
+    name: trino
+    sources:
+    - https://github.com/valeriano-manassero/helm-charts
+    - https://github.com/trinodb/trino
+    urls:
+    - https://github.com/olehrgf/trino-helm-charts/releases/download/trino-5.3.1/trino-5.3.1.tgz
+    version: 5.3.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Password authenticator properties
+        - kind: added
+          description: Pod labels
+        - kind: added
+          description: Fix container env. Added container envFrom
     apiVersion: v1
     appVersion: "419"
     created: "2023-07-03T12:43:18.24998304Z"
