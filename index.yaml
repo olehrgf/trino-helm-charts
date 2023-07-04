@@ -2,6 +2,44 @@ apiVersion: v1
 entries:
   trino:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Capabilities to use a custom secret for password authentication
+        - kind: added
+          description: Capabilities to use a custom secret for fault tolerance
+        - kind: changed
+          description: How the fault tolerance properties are configured
+    apiVersion: v1
+    appVersion: "419"
+    created: "2023-07-04T07:14:56.080326818Z"
+    description: High performance, distributed SQL query engine for big data
+    digest: 86d0f7d9b1fafbcbf46bc6d52a4d2f383db6ca739f1cd2bcc08b8ac910c15560
+    home: https://trino.io
+    icon: https://trino.io/assets/images/trino-logo/trino-ko_tiny-alt.svg
+    keywords:
+    - trino
+    - trinosql
+    - trinodb
+    - presto
+    - prestosql
+    - prestodb
+    - big data
+    - database
+    - sql
+    - query engine
+    - high performance
+    kubeVersion: '>= 1.24.0-0 < 1.28.0-0'
+    maintainers:
+    - name: valeriano-manassero
+      url: https://github.com/valeriano-manassero
+    name: trino
+    sources:
+    - https://github.com/valeriano-manassero/helm-charts
+    - https://github.com/trinodb/trino
+    urls:
+    - https://github.com/olehrgf/trino-helm-charts/releases/download/trino-6.0.0/trino-6.0.0.tgz
+    version: 6.0.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: added
           description: Password authenticator properties
